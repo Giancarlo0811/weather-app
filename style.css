@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    margin: 5rem 2rem;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    border-radius: 15px;
+    gap: 1rem;
+}
+
+.search-city {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+#city-name {
+    padding: 1rem 1.5rem;
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    color: #333;
+    width: 90%;
+}
+
+.search-img-container {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.search-img {
+    width: 2rem;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.search-img:hover {
+    transform: scale(1.2); 
+}
+
+.weather-container {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    display: none;
+}
+
+.weather-img {
+    width: 16rem;
+}
+
+.weather-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.temperature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.celsius {
+    font-size: 6rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.city {
+    color: #fff;
+    font-weight: 400;
+    font-size: 4rem;
+}
+
+.weather-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+}
+
+.humidity, 
+.wind {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.humidity-img, 
+.wind-img {
+    width: 3rem;
+}
+
+.humidity-img img, 
+.wind-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.humidity h3, 
+.wind h3 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.humidity p, 
+.wind p {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #5b548a;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+footer p {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+}
+
+@media(max-width: 500px) {
+    .weather-info {
+        flex-direction: column;
+    }
+}

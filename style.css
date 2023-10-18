@@ -143,6 +143,12 @@ body {
     text-align: center;
 }
 
+.error {
+    color: #fff;
+    font-size: 1.5rem;
+    display: none;
+}
+
 footer {
     position: fixed;
     bottom: 0;
